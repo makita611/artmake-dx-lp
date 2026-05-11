@@ -25,7 +25,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.97);backdrop
 
 /* HERO */
 #hero{background:linear-gradient(160deg,var(--white) 0%,var(--navy-xs) 100%);padding:96px 6% 80px;display:flex;align-items:center;gap:64px;min-height:90vh}
-.hero-text{flex:1;max-width:560px}
+.hero-text{flex:1;max-width:520px}
 .hero-badge{display:inline-block;background:var(--gold-lt);color:#8B6914;font-size:.75rem;font-weight:700;padding:5px 14px;border-radius:20px;letter-spacing:.1em;margin-bottom:24px}
 h1{font-size:clamp(2rem,4vw,3.2rem);font-weight:900;line-height:1.3;color:var(--navy);margin-bottom:20px}
 h1 em{font-style:normal;color:var(--gold)}
@@ -34,20 +34,13 @@ h1 em{font-style:normal;color:var(--gold)}
 .btn-primary{background:var(--navy);color:#fff;padding:15px 32px;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;transition:background .2s;display:inline-block}.btn-primary:hover{background:var(--navy-lt)}
 .btn-outline{border:2px solid var(--navy);color:var(--navy);padding:13px 28px;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;transition:all .2s;display:inline-block}.btn-outline:hover{background:var(--navy-xs)}
 
-/* HERO IMAGES */
-.hero-vis{flex:1;max-width:520px}
-.hero-img-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.hero-img-item{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 8px 24px rgba(30,58,95,.12);background:linear-gradient(135deg,var(--navy-xs),#d8e8f4)}
-.hero-img-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}.hero-img-item:hover img{transform:scale(1.03)}
-.img-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;min-height:140px;gap:8px;padding:16px;text-align:center}
-.img-placeholder-icon{font-size:2rem}
-.img-placeholder-label{font-size:.78rem;font-weight:700;color:var(--navy);line-height:1.4}
-.img-placeholder-sub{font-size:.7rem;color:var(--sub)}
-.hero-img-item:nth-child(1) .img-placeholder{background:linear-gradient(135deg,#dce8f5,#c8ddf0)}
-.hero-img-item:nth-child(2) .img-placeholder{background:linear-gradient(135deg,#f5ece0,#ede0c8)}
-.hero-img-item:nth-child(3) .img-placeholder{background:linear-gradient(135deg,#e8f0e8,#d4e8d4)}
-.hero-img-item:nth-child(4) .img-placeholder{background:linear-gradient(135deg,#f0ecf5,#e4dcf0)}
-.hero-img-caption{font-size:.72rem;color:var(--sub);text-align:center;margin-top:10px;line-height:1.6}
+/* HERO IMAGE (facecheck1) */
+.hero-vis{flex:1;max-width:480px}
+.hero-main-img{width:100%;border-radius:16px;box-shadow:0 24px 64px rgba(30,58,95,.16);display:block;object-fit:cover}
+.hero-img-placeholder{width:100%;aspect-ratio:4/5;border-radius:16px;background:linear-gradient(135deg,var(--navy-xs),#c8ddf0);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;box-shadow:0 24px 64px rgba(30,58,95,.16)}
+.hero-img-placeholder span:first-child{font-size:3rem}
+.hero-img-placeholder .ph-label{font-size:.9rem;font-weight:700;color:var(--navy)}
+.hero-img-placeholder .ph-sub{font-size:.75rem;color:var(--sub)}
 
 /* SECTIONS common */
 section{padding:80px 6%}
@@ -58,6 +51,15 @@ h2 em{font-style:normal;color:var(--gold)}
 .sec-desc{font-size:1rem;color:var(--sub);max-width:640px;line-height:1.9;margin-bottom:48px}
 .divider{width:40px;height:3px;background:linear-gradient(90deg,var(--navy),var(--gold));border-radius:2px;margin:0 0 32px}
 
+/* SCENE */
+#scene{background:var(--white)}
+.scene-dialogue{max-width:680px;margin:0 auto 40px;background:var(--bg);border-radius:12px;padding:32px 36px}
+.dialogue-line{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start}
+.dialogue-line:last-child{margin-bottom:0}
+.d-role{font-size:.75rem;font-weight:700;color:var(--gold);white-space:nowrap;min-width:52px;margin-top:3px}
+.d-text{font-size:.92rem;color:var(--text);line-height:1.8}
+.scene-note{text-align:center;font-size:.88rem;color:var(--sub);font-style:italic;margin-top:24px}
+
 /* PAIN */
 #pain{background:var(--bg)}
 .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
@@ -67,7 +69,7 @@ h2 em{font-style:normal;color:var(--gold)}
 .pain-card p{font-size:.9rem;color:var(--sub);line-height:1.8}
 
 /* INDUSTRY TRENDS */
-#industry-trends{background:linear-gradient(135deg,#f9f8f5 0%,#fdfcf9 100%);padding:80px 6%}
+#industry-trends{background:linear-gradient(135deg,#f9f8f5 0%,#fdfcf9 100%)}
 .section-intro{font-size:1.05rem;color:var(--sub);text-align:center;max-width:640px;margin:0 auto 48px;line-height:1.9}
 .trends-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:2rem 0}
 .trend-card{padding:28px;background:var(--white);border-radius:12px;box-shadow:0 2px 12px rgba(30,58,95,.07);border:1px solid var(--line)}
@@ -80,7 +82,7 @@ h2 em{font-style:normal;color:var(--gold)}
 
 /* SOLUTION */
 #solution{background:var(--white)}
-.feature-block{display:flex;gap:48px;align-items:flex-start;margin-bottom:64px}
+.feature-block{display:flex;gap:48px;align-items:flex-start;margin-bottom:72px}
 .feature-block:last-child{margin-bottom:0}
 .feature-block.rev{flex-direction:row-reverse}
 .feature-vis{flex:1;min-width:0}
@@ -96,12 +98,32 @@ h2 em{font-style:normal;color:var(--gold)}
 .detail-list{list-style:none}
 .detail-list li{padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem;color:var(--text);display:flex;gap:10px}
 .detail-list li::before{content:"✓";color:var(--gold);font-weight:800;flex-shrink:0}
-@media(max-width:680px){.feature-block,.feature-block.rev{flex-direction:column}}
+
+/* インライン画像（facecheck2, 3, 4 用） */
+.section-img{width:100%;border-radius:12px;box-shadow:0 8px 28px rgba(30,58,95,.10);display:block;margin-top:20px;object-fit:cover}
+.section-img-placeholder{width:100%;aspect-ratio:16/9;border-radius:12px;background:linear-gradient(135deg,var(--navy-xs),#d0e4f4);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;margin-top:20px;box-shadow:0 8px 28px rgba(30,58,95,.10)}
+.section-img-placeholder span{font-size:2.2rem}
+.section-img-placeholder .ph-label{font-size:.82rem;font-weight:700;color:var(--navy)}
+.section-img-placeholder .ph-sub{font-size:.7rem;color:var(--sub)}
+
+/* SCORE EXAMPLE */
+.score-example{margin-top:24px;background:var(--bg);border-radius:10px;padding:20px 24px;border:1px solid var(--line)}
+.score-example-title{font-size:.78rem;font-weight:700;color:var(--gold);letter-spacing:.1em;margin-bottom:12px}
+.score-row-ex{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.score-name{font-size:.82rem;color:var(--sub)}
+.score-badge{font-size:.82rem;font-weight:700;padding:2px 10px;border-radius:12px}
+.badge-excellent{background:#E8F5E9;color:#2E7D32}
+.badge-good{background:#E3F2FD;color:#1565C0}
+.badge-normal{background:#FFF8E1;color:#F57F17}
+.badge-bad{background:#FFEBEE;color:#C62828}
+.score-total{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.score-total-label{font-size:.88rem;font-weight:700;color:var(--navy)}
+.score-total-val{font-size:1.6rem;font-weight:900;color:var(--navy)}.score-total-val span{font-size:.9rem;color:var(--sub)}
 
 /* TECH SPECS TOGGLE */
-.tech-specs-detail{display:none;margin-top:24px;padding:24px;background:var(--white);border-radius:10px;border:1px solid var(--line)}
+.tech-specs-detail{display:none;margin-top:20px;padding:24px;background:var(--white);border-radius:10px;border:1px solid var(--line)}
 .tech-specs-detail h3{font-size:1rem;font-weight:800;color:var(--navy);margin-bottom:16px}
-.specs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.specs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
 .specs-block h4{font-size:.88rem;font-weight:700;color:var(--gold);margin-bottom:10px}
 .specs-block ul,.specs-block ol{padding-left:18px;font-size:.85rem;color:var(--sub);line-height:1.9}
 .tech-toggle-btn{margin-top:16px;background:none;border:1.5px solid var(--navy);color:var(--navy);padding:9px 20px;border-radius:6px;font-size:.85rem;font-weight:700;cursor:pointer;transition:all .2s}
@@ -116,22 +138,45 @@ h2 em{font-style:normal;color:var(--gold)}
 .benefit-card p{font-size:.88rem;color:var(--sub);line-height:1.8}
 .benefit-kpi{display:inline-block;margin-top:12px;font-size:.88rem;font-weight:700;color:var(--gold);background:var(--gold-lt);padding:4px 12px;border-radius:20px}
 
+/* PHILOSOPHY */
+#philosophy{background:linear-gradient(160deg,var(--navy) 0%,#243e6a 100%);color:#fff}
+#philosophy .sec-label{color:var(--gold-lt)}
+#philosophy h2{color:#fff}
+#philosophy .divider{background:linear-gradient(90deg,var(--gold),rgba(255,255,255,.3))}
+.philosophy-body{display:flex;gap:48px;align-items:center;margin-top:40px}
+.philosophy-text{flex:1}
+.philosophy-text p{font-size:1rem;color:rgba(255,255,255,.85);line-height:2;margin-bottom:20px}
+.philosophy-text p strong{color:var(--gold)}
+.philosophy-quote{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:28px 32px}
+.philosophy-quote p{font-size:1rem;color:rgba(255,255,255,.9);line-height:2;font-style:italic}
+.philosophy-quote cite{display:block;margin-top:12px;font-size:.8rem;color:var(--gold-lt);font-style:normal}
+
 /* CASE STUDY */
-#case-study{background:var(--white);padding:80px 6%}
+#case-study{background:var(--white)}
 .case-study-cards{display:flex;flex-direction:column;gap:32px;margin-top:8px}
-.case-card{display:flex;gap:32px;align-items:flex-start;padding:28px 32px;background:var(--bg);border-radius:12px;border-left:4px solid var(--gold)}
+.case-card{padding:28px 32px;background:var(--bg);border-radius:12px;border-left:4px solid var(--gold)}
 .case-card.alt{border-left-color:var(--navy-lt)}
 .case-content h3{font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:4px}
 .case-role{font-size:.8rem;color:var(--sub);margin-bottom:12px}
-.case-quote{font-size:.92rem;color:var(--text);line-height:1.85;font-style:italic;padding:12px 16px;background:var(--white);border-radius:6px;margin-bottom:14px;border-left:3px solid var(--gold-lt)}
+.case-quote{font-size:.92rem;color:var(--text);line-height:1.85;font-style:italic;padding:16px 20px;background:var(--white);border-radius:6px;margin-bottom:14px;border-left:3px solid var(--gold-lt)}
 .case-result{font-size:.88rem;color:var(--sub)}
 .result-val{color:var(--gold);font-weight:700;font-size:1rem}
-@media(max-width:680px){
-  .case-card{flex-direction:column}
-}
+
+/* BEFORE/AFTER */
+#before-after{background:var(--bg)}
+.ba-wrap{display:flex;gap:48px;align-items:center;margin-top:32px}
+.ba-img-col{flex:1}
+.ba-text-col{flex:1}
+.ba-text-col h3{font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:14px}
+.ba-text-col p{font-size:.95rem;color:var(--sub);line-height:1.9;margin-bottom:16px}
+.ba-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.ba-stat{background:var(--white);border-radius:10px;padding:16px;text-align:center;border:1px solid var(--line)}
+.ba-stat-val{font-size:1.5rem;font-weight:900;color:var(--navy);line-height:1}
+.ba-stat-val span{font-size:.85rem;color:var(--gold)}
+.ba-stat-lbl{font-size:.75rem;color:var(--sub);margin-top:4px}
 
 /* PLANS */
-#plans{background:var(--bg)}
+#plans{background:var(--white)}
 .plan-table{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:720px){.plan-table{grid-template-columns:1fr}}
 .plan-card{border:1px solid var(--line);border-radius:14px;padding:28px;position:relative;background:var(--white)}
@@ -153,8 +198,8 @@ h2 em{font-style:normal;color:var(--gold)}
 .cta-filled{background:var(--navy);color:#fff}.cta-filled:hover{background:var(--navy-lt)}
 .cta-border{border:1.5px solid var(--navy);color:var(--navy)}.cta-border:hover{background:var(--navy-xs)}
 
-/* FUTURE ROADMAP */
-#future-roadmap{background:var(--bg);padding:80px 6%}
+/* ROADMAP */
+#future-roadmap{background:var(--bg)}
 .roadmap-timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:8px}
 .roadmap-phase{background:var(--white);border-radius:12px;padding:28px;border:1px solid var(--line);position:relative;padding-top:52px}
 .phase-marker{position:absolute;top:-14px;left:24px;background:var(--navy);color:#fff;font-size:.78rem;font-weight:700;padding:5px 16px;border-radius:20px;letter-spacing:.05em}
@@ -180,14 +225,14 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
 
 /* RESPONSIVE */
 @media(max-width:900px){
-  #hero{flex-direction:column;padding:64px 6% 48px;min-height:auto;gap:40px}
-  .hero-text{max-width:100%}
-  .hero-vis{max-width:100%;width:100%}
+  #hero{flex-direction:column;padding:64px 6% 48px;min-height:auto;gap:32px}
+  .hero-text,.hero-vis{max-width:100%;width:100%}
+  .philosophy-body{flex-direction:column}
+  .ba-wrap{flex-direction:column}
+  .feature-block,.feature-block.rev{flex-direction:column}
 }
 @media(max-width:480px){
-  .hero-img-grid{gap:8px}
-  .trends-grid{grid-template-columns:1fr}
-  .roadmap-timeline{grid-template-columns:1fr}
+  .trends-grid,.roadmap-timeline,.ba-stats{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -211,55 +256,55 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
     <h1>審美眼を、<br><em>科学する。</em></h1>
     <p class="hero-sub">
       MediaPipe搭載のAIが顔面468点を解析し、眉の左右差を0.1mm単位で数値化。<br>
-      「感覚のデザイン」を「数値のエビデンス」に変え、クリニックの成約率と<br>患者満足度を同時に引き上げるアートメイク専用SaaSです。
+      「勘と経験」をデジタルがサポートし、<br>
+      「感覚のデザイン」を「数値のエビデンス」に変える<br>アートメイク専用SaaSです。
     </p>
     <div class="hero-btns">
       <a href="#plans" class="btn-primary">無料デモを試す</a>
       <a href="#partner" class="btn-outline">共同開発に参加する</a>
     </div>
   </div>
+  <!--
+    facecheck1.jpg: TOP / First View メイン画像
+    ローカル配置:  images/facecheck1.jpg
+    WordPress使用時: src を wp-content/uploads の URL に差し替え
+  -->
   <div class="hero-vis">
-    <!--
-      画像ファイル名: facecheck1.jpg 〜 facecheck4.jpg
-      ローカル配置:  artmake-dx-lp/images/facecheck1.jpg
-      WordPress使用時: src を wp-content/uploads の URL に差し替え
-        例) https://aidealize.com/wp-content/uploads/2026/05/facecheck1.jpg
-    -->
-    <div class="hero-img-grid">
-      <div class="hero-img-item">
-        <img src="images/facecheck1.jpg" alt="FaceBalance AI 解析画面1"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="img-placeholder">
-          <span class="img-placeholder-icon">📊</span>
-          <span class="img-placeholder-label">facecheck1.jpg</span>
-        </div>
+    <img src="images/facecheck1.jpg" alt="FaceBalance AI — 顔面バランス解析"
+      class="hero-main-img"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="hero-img-placeholder" style="display:none">
+      <span>📸</span>
+      <span class="ph-label">facecheck1.jpg</span>
+      <span class="ph-sub">TOP / First View 画像</span>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE — 現場でのリアルな会話 -->
+<section id="scene">
+  <div class="inner">
+    <span class="sec-label">A SCENE FROM THE CLINIC</span>
+    <h2>カウンセリングで、<br>毎日繰り返される<em>この会話。</em></h2>
+    <div class="divider"></div>
+    <div class="scene-dialogue">
+      <div class="dialogue-line">
+        <span class="d-role">患者</span>
+        <span class="d-text">「先生、左右の眉、ちゃんと揃いますか…？」</span>
       </div>
-      <div class="hero-img-item">
-        <img src="images/facecheck2.jpg" alt="FaceBalance AI 解析画面2"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="img-placeholder">
-          <span class="img-placeholder-icon">📊</span>
-          <span class="img-placeholder-label">facecheck2.jpg</span>
-        </div>
+      <div class="dialogue-line">
+        <span class="d-role">アーティスト</span>
+        <span class="d-text">「はい、しっかり揃えますので大丈夫ですよ。綺麗になりますよ。」</span>
       </div>
-      <div class="hero-img-item">
-        <img src="images/facecheck3.jpg" alt="FaceBalance AI 解析画面3"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="img-placeholder">
-          <span class="img-placeholder-icon">📊</span>
-          <span class="img-placeholder-label">facecheck3.jpg</span>
-        </div>
-      </div>
-      <div class="hero-img-item">
-        <img src="images/facecheck4.jpg" alt="FaceBalance AI 解析画面4"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="img-placeholder">
-          <span class="img-placeholder-icon">📊</span>
-          <span class="img-placeholder-label">facecheck4.jpg</span>
-        </div>
+      <div class="dialogue-line">
+        <span class="d-role">患者</span>
+        <span class="d-text">「…（でも、本当に大丈夫かな。どのくらいズレてるんだろう）」</span>
       </div>
     </div>
-    <p class="hero-img-caption">※ 実際のAI解析画面。顔写真はデモ用画像を使用。</p>
+    <p class="scene-note">
+      どれだけ腕の立つアーティストでも、「言葉」だけでは不安は消えない。<br>
+      数値とビジュアルで示して、はじめて患者さんの表情が変わる。
+    </p>
   </div>
 </section>
 
@@ -274,17 +319,22 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
       <div class="pain-card">
         <div class="pain-icon">🗣️</div>
         <h3>説明の限界</h3>
-        <p>「綺麗になります」という言葉だけでは、患者さんの『本当に大丈夫かな…』という心の声は消えません。特に左右差への不安を言葉で説明しても、数値で示せなければ、成約はスルーされてしまいます。</p>
+        <p>「綺麗になります」という言葉だけでは、患者さんの『本当に大丈夫かな…』という心の声は消えません。左右差への不安を数値で示せないことが、高単価プランへの成約を阻んでいます。</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">👁️</div>
+        <h3>客観評価の難しさ</h3>
+        <p>利き目や見る角度によって、同じ顔でも左右差の評価がブレます。ベテランでさえ「感覚」に頼らざるを得ず、その誤差が施術後の認識のズレを生む原因になっています。</p>
       </div>
       <div class="pain-card">
         <div class="pain-icon">👩‍🏫</div>
         <h3>教育のブラックボックス</h3>
-        <p>ベテランの「感覚」を新人に伝える術がなく、デビューまで時間がかかります。スキルの差がサービス品質のバラツキを生み、クリニックのブランドを傷つけます。</p>
+        <p>ベテランの「感覚」を新人に伝える術がなく、デビューまで平均12ヶ月かかります。スキルの差がサービス品質のバラツキを生み、クリニックのブランドを傷つけます。</p>
       </div>
       <div class="pain-card">
         <div class="pain-icon">⚖️</div>
         <h3>定着後のクレームリスク</h3>
-        <p>施術直後は満足でも、定着後の色素の変化や表情筋の非対称によるズレがトラブルの原因に。施術前の数値記録がなければ、適切な施術を証明できません。</p>
+        <p>施術直後は満足でも、定着後の色素変化や表情筋の非対称でズレが生じることも。施術前の数値記録がなければ、適切な施術を証明できません。</p>
       </div>
     </div>
   </div>
@@ -296,42 +346,29 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
     <span class="sec-label">WHY NOW? — 市場の変化</span>
     <h2>アートメイク業界が<em>大きく変わる</em>3つの理由</h2>
     <div class="divider"></div>
-    <p class="section-intro">
-      美容医療の品質基準が世界的に高まる中、日本のアートメイク業界も新たなターニングポイントを迎えています。
-    </p>
+    <p class="section-intro">美容医療の品質基準が世界的に高まる中、日本のアートメイク業界も新たなターニングポイントを迎えています。</p>
     <div class="trends-grid">
       <div class="trend-card">
         <div class="trend-icon">📋</div>
         <h3>法的リスクの増大</h3>
-        <p>
-          美容医療全般で医療ADR（裁判外紛争解決）が増加。定着後のトラブル時に「適切な施術を行った証拠」が求められるようになっています。<br><br>
-          <strong>関連データ</strong>: 美容医療関連のトラブル相談件数<br>
-          <span class="trend-highlight">前年比 +47%</span>（厚労省）
-        </p>
+        <p>美容医療全般で医療ADRが増加。定着後のトラブル時に「適切な施術を行った証拠」が求められるようになっています。<br><br>
+        <strong>関連データ</strong>: 美容医療トラブル相談件数<br><span class="trend-highlight">前年比 +47%</span>（厚労省）</p>
       </div>
       <div class="trend-card">
         <div class="trend-icon">📚</div>
         <h3>患者リテラシーの向上</h3>
-        <p>
-          「黄金比」「骨格診断」の知識を持つ患者が増加。感覚だけでの説明では満足しない時代へシフトしています。<br><br>
-          <strong>関連データ</strong>: SNSでの「アートメイク失敗」検索数<br>
-          <span class="trend-highlight">前年比 +180%</span>
-        </p>
+        <p>「黄金比」「骨格診断」の知識を持つ患者が増加。感覚だけでの説明では満足しない時代へシフトしています。<br><br>
+        <strong>関連データ</strong>: SNSでの「アートメイク失敗」検索数<br><span class="trend-highlight">前年比 +180%</span></p>
       </div>
       <div class="trend-card">
         <div class="trend-icon">🌍</div>
         <h3>グローバル競争の激化</h3>
-        <p>
-          韓国・台湾のアートメイク大手は既にAI顔面分析を導入。日本市場での品質格差は加速度的に広がっています。<br><br>
-          <strong>関連データ</strong>: 韓国のAI顔面解析ツール<br>
-          導入院数 <span class="trend-highlight">920院以上</span>
-        </p>
+        <p>韓国・台湾のアートメイク大手は既にAI顔面分析を導入。日本市場での品質格差は加速度的に広がっています。<br><br>
+        <strong>関連データ</strong>: 韓国のAI顔面解析ツール導入院数<br><span class="trend-highlight">920院以上</span></p>
       </div>
     </div>
     <div class="trends-cta">
-      <p>
-        このような市場変化の中で、<strong>「感覚」を「数値」に変えるツール</strong>は、もはや差別化ではなく、必須インフラになりつつあります。
-      </p>
+      <p>このような市場変化の中で、<strong>「感覚」を「数値」に変えるツール</strong>は、もはや差別化ではなく、必須インフラになりつつあります。</p>
     </div>
   </div>
 </section>
@@ -349,7 +386,7 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
         <div class="feature-card">
           <div class="feature-num">FEATURE 01</div>
           <h3>AI精密デザイン解析<br>Imaging Engine</h3>
-          <p>MediaPipeによる顔面468点の特徴点抽出。瞳孔・骨格・中顔面の3軸モードで、どんな顔の向きにも対応します。</p>
+          <p>MediaPipeによる顔面468点の特徴点抽出。黄金比と解剖学的配置をAIが学習し、瞳孔・骨格・中顔面の3軸モードで解析します。</p>
           <div class="tag-row">
             <span class="tag">0.1mm精度</span>
             <span class="tag">3軸補正</span>
@@ -357,15 +394,26 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
             <span class="tag">スコア化</span>
           </div>
         </div>
-        <!-- 技術仕様トグル -->
+        <!--
+          facecheck3.jpg: スコア・眉毛の高さ比較画面
+          ローカル配置: images/facecheck3.jpg
+        -->
+        <img src="images/facecheck3.jpg" alt="AI解析スコア・眉毛の高さ比較画面"
+          class="section-img"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="section-img-placeholder" style="display:none">
+          <span>📊</span>
+          <span class="ph-label">facecheck3.jpg</span>
+          <span class="ph-sub">スコア・眉毛の高さ比較画面</span>
+        </div>
         <div class="tech-specs-detail" id="tech-specs-toggle">
           <h3>技術仕様の詳細</h3>
           <div class="specs-grid">
             <div class="specs-block">
               <h4>✓ 多角的な顔面分析軸</h4>
               <ul>
-                <li>瞳孔基準：水平バランス（目の位置ベース）</li>
-                <li>骨格基準：垂直バランス（鼻根・顎先ベース）</li>
+                <li>瞳孔基準：水平バランス</li>
+                <li>骨格基準：垂直バランス</li>
                 <li>中顔面基準：立体的ねじれの補正</li>
               </ul>
             </div>
@@ -381,14 +429,6 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
                 <li>対称スコア（100点満点）</li>
               </ol>
             </div>
-            <div class="specs-block">
-              <h4>✓ 黄金比ガイド搭載</h4>
-              <ul>
-                <li>顔全体の「理想的なバランス」を自動導出</li>
-                <li>患者の骨格に最適化されたプランを提案</li>
-                <li>Excellent / Good / Normal / Bad で格付け</li>
-              </ul>
-            </div>
           </div>
         </div>
         <button class="tech-toggle-btn" onclick="toggleTechSpecs()">技術仕様の詳細を見る ▼</button>
@@ -403,6 +443,29 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
           <li>mm単位換算（虹彩キャリブレーション対応）</li>
           <li>目元の幅・高さ・面積も同時解析</li>
         </ul>
+        <div class="score-example">
+          <div class="score-example-title">SCORE EXAMPLE — 解析結果イメージ</div>
+          <div class="score-row-ex">
+            <span class="score-name">眉頭の高さ差</span>
+            <span class="score-badge badge-good">Good — 0.4mm</span>
+          </div>
+          <div class="score-row-ex">
+            <span class="score-name">眉山の高さ差</span>
+            <span class="score-badge badge-excellent">Excellent — 0.1mm</span>
+          </div>
+          <div class="score-row-ex">
+            <span class="score-name">傾き角度差</span>
+            <span class="score-badge badge-normal">Normal — 2.1°</span>
+          </div>
+          <div class="score-row-ex">
+            <span class="score-name">眉尻の高さ差</span>
+            <span class="score-badge badge-bad">Bad — 1.8mm</span>
+          </div>
+          <div class="score-total">
+            <span class="score-total-label">総合対称スコア</span>
+            <span class="score-total-val">87<span>/100</span></span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -412,13 +475,25 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
         <div class="feature-card">
           <div class="feature-num">FEATURE 02</div>
           <h3>スマートカルテ ＆ CRM<br>Patient Management</h3>
-          <p>術前・デザイン・術後の3フェーズを同一条件で比較管理。使用色素・針・マシン設定を画像データとセットで記録します。</p>
+          <p>写真をアップロードするだけで解析完了。術前・デザイン・術後の3フェーズを同一条件で比較管理します。</p>
           <div class="tag-row">
             <span class="tag">3フェーズ管理</span>
             <span class="tag">経過比較</span>
             <span class="tag">リタッチ通知</span>
             <span class="tag" style="background:var(--gold-lt);color:#8B6914">開発中</span>
           </div>
+        </div>
+        <!--
+          facecheck2.jpg: アップロード後の実際の解析画面
+          ローカル配置: images/facecheck2.jpg
+        -->
+        <img src="images/facecheck2.jpg" alt="アップロード後の解析画面"
+          class="section-img"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="section-img-placeholder" style="display:none">
+          <span>🖥️</span>
+          <span class="ph-label">facecheck2.jpg</span>
+          <span class="ph-sub">アップロード後の実際の解析画面</span>
         </div>
       </div>
       <div class="feature-detail">
@@ -473,20 +548,88 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
     <div class="benefit-row">
       <div class="benefit-card">
         <div class="benefit-num">成約率<span>の向上</span></div>
-        <h4>AIレポートがクロージングを変える — 実装クリニックで +50% 達成</h4>
-        <p>カウンセリングで「0.5mmのズレがあります、こう修正します」と数値で示すことで、患者の納得感が生まれ、高単価プランへの移行率が高まります。</p>
-        <span class="benefit-kpi">導入院実績: 32% → 48%</span>
+        <h4>AIレポートがクロージングを変える</h4>
+        <p>「0.5mmのズレがあります、こう修正します」と数値で示した瞬間、患者の納得感が生まれます。カウンセリング時間が短縮され、高単価プランへの移行率が高まります。</p>
+        <span class="benefit-kpi">導入院実績: 32% → 48%（+50%）</span>
       </div>
       <div class="benefit-card">
         <div class="benefit-num">教育<span>コストの削減</span></div>
         <h4>新人デビューまでの期間を短縮</h4>
-        <p>指導者が横にいなくても、AIが練習結果を客観的に採点。「どこが悪いか」を数値で示すことで、感覚的な指導から脱却し、教育効率を高めます。</p>
+        <p>AIが練習結果を客観的に採点。「どこが悪いか」を数値で示すことで感覚的な指導から脱却。スコアをもとにした具体的な改善指示が成長を加速します。</p>
         <span class="benefit-kpi">デビューまで: 12ヶ月 → 4ヶ月</span>
       </div>
       <div class="benefit-card">
         <div class="benefit-num">リスク<span>ヘッジ</span></div>
         <h4>施術記録が法的エビデンスに</h4>
-        <p>術前の詳細な数値記録は、定着後トラブル発生時の「適切な施術を行った証明」になります。クリニックの信頼性と安全性を担保します。</p>
+        <p>術前の詳細な数値記録は、定着後トラブル発生時の「適切な施術を行った証明」になります。医療ADR増加の時代に、クリニックを守る保険になります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy">
+  <div class="inner">
+    <span class="sec-label">OUR BELIEF</span>
+    <h2>AIは、職人の仕事を<em>奪わない。</em></h2>
+    <div class="divider"></div>
+    <div class="philosophy-body">
+      <div class="philosophy-text">
+        <p>アートメイクは、人の顔に向き合う繊細な仕事です。<br>どれだけ精密なAIがあっても、施術するのは人間であり、患者さんの表情を読んで寄り添うのも人間です。</p>
+        <p>FaceBalance AIが目指しているのは、<strong>アーティストの「勘と経験」を数値として可視化し、その技術を証明できる世界</strong>です。</p>
+        <p>長年かけて磨いてきた審美眼を、AIが「価値あるエビデンス」に変える。それがこのツールの本質です。</p>
+      </div>
+      <div class="philosophy-quote">
+        <p>「職人の感覚をデジタルがサポートする。<br>それが美容医療の可視化革命だと、私たちは信じています。」</p>
+        <cite>— FaceBalance AI 開発チーム</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="before-after">
+  <div class="inner">
+    <span class="sec-label">RESULTS — 施術前後の変化</span>
+    <h2>数値が、変化を<em>証明する。</em></h2>
+    <div class="divider"></div>
+    <div class="ba-wrap">
+      <div class="ba-img-col">
+        <!--
+          facecheck4.jpg: 施術前後の比較画像
+          ローカル配置: images/facecheck4.jpg
+        -->
+        <img src="images/facecheck4.jpg" alt="施術前後の眉バランス比較"
+          class="section-img" style="margin-top:0"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="section-img-placeholder" style="display:none;margin-top:0">
+          <span>✨</span>
+          <span class="ph-label">facecheck4.jpg</span>
+          <span class="ph-sub">施術前後の比較画像</span>
+        </div>
+      </div>
+      <div class="ba-text-col">
+        <h3>「良くなった気がする」から<br>「スコアが76 → 91になった」へ</h3>
+        <p>術前・術後を同じ条件で解析することで、改善の度合いを数値で証明できます。患者さんへの説明が変わり、次回施術への信頼につながります。</p>
+        <p>「AIが『右眉山を1.2mm上げることでスコア91点を実現可能』と提案してくれる。施術のゴールが明確になった。」</p>
+        <div class="ba-stats">
+          <div class="ba-stat">
+            <div class="ba-stat-val">76<span>/100</span></div>
+            <div class="ba-stat-lbl">術前スコア</div>
+          </div>
+          <div class="ba-stat">
+            <div class="ba-stat-val">91<span>/100</span></div>
+            <div class="ba-stat-lbl">術後スコア</div>
+          </div>
+          <div class="ba-stat">
+            <div class="ba-stat-val">+15<span>pt</span></div>
+            <div class="ba-stat-lbl">スコア改善幅</div>
+          </div>
+          <div class="ba-stat">
+            <div class="ba-stat-val">0.2<span>mm</span></div>
+            <div class="ba-stat-lbl">術後の左右差</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -495,12 +638,11 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
 <!-- CASE STUDY -->
 <section id="case-study">
   <div class="inner">
-    <span class="sec-label">SECTION 03-B — CASE STUDY</span>
+    <span class="sec-label">CASE STUDY — 導入事例</span>
     <h2>導入クリニックが体験した<em>実装の効果</em></h2>
     <div class="divider"></div>
     <p class="sec-desc">実際に現場で使われているからこそ生まれる、リアルな成果と声をご紹介します。</p>
     <div class="case-study-cards">
-
       <div class="case-card">
         <div class="case-content">
           <h3>一番町まつりかクリニック</h3>
@@ -508,12 +650,9 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
           <div class="case-quote">
             「これまでは患者さんの『不安な表情』を読みながら説明していました。AIレポートを見せた瞬間、患者さんの目つきが変わる。『こんなに正確に数値化されるんだ』という安心感が、即成約に繋がっています」
           </div>
-          <p class="case-result">
-            高単価プラン成約率: <span class="result-val">32% → 48%</span>（+50%）
-          </p>
+          <p class="case-result">高単価プラン成約率: <span class="result-val">32% → 48%</span>（+50%）</p>
         </div>
       </div>
-
       <div class="case-card alt">
         <div class="case-content">
           <h3>渋谷イメージケアクリニック</h3>
@@ -521,12 +660,9 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
           <div class="case-quote">
             「新人アーティストの成長速度が3倍になりました。AIのスコアを見ながら『ここを0.2mm修正しましょう』と具体的に指導できるので、曖昧さがなくなり、本当に成長が早い」
           </div>
-          <p class="case-result">
-            新人デビュー期間: <span class="result-val">12ヶ月 → 4ヶ月</span>（-67%）
-          </p>
+          <p class="case-result">新人デビュー期間: <span class="result-val">12ヶ月 → 4ヶ月</span>（-67%）</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -539,8 +675,6 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
     <div class="divider"></div>
     <p class="sec-desc">まずはAI分析機能だけで即日導入可能。CRM・評価機能は先行予約受付中です。</p>
     <div class="plan-table">
-
-      <!-- スターター -->
       <div class="plan-card">
         <div class="plan-name">STARTER</div>
         <div class="plan-price">¥14,800<span>/月</span></div>
@@ -557,8 +691,6 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
         </ul>
         <a href="#" class="plan-cta cta-border">デモを試す（無料）</a>
       </div>
-
-      <!-- プロ -->
       <div class="plan-card featured">
         <div class="plan-badge">最も人気</div>
         <div class="plan-name">PRO</div>
@@ -576,8 +708,6 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
         </ul>
         <a href="#" class="plan-cta cta-filled">先行予約をする</a>
       </div>
-
-      <!-- エンタープライズ -->
       <div class="plan-card">
         <div class="plan-name">ENTERPRISE</div>
         <div class="plan-price" style="font-size:1.4rem">個別<span style="font-size:.85rem"> 見積もり</span></div>
@@ -594,7 +724,6 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
         </ul>
         <a href="#partner" class="plan-cta cta-border">パートナーに応募</a>
       </div>
-
     </div>
   </div>
 </section>
@@ -611,9 +740,10 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
         <div class="phase-marker">Phase 2</div>
         <p class="phase-timing">2026年内予定</p>
         <ul>
-          <li>ヒアルロン酸注入：注入前後の3Dボリューム比較</li>
+          <li>ヒアルロン酸注入：前後の3Dボリューム比較</li>
           <li>リップ施術：唇の左右対称性・ボリューム指標化</li>
           <li>糸リフト：フェイスラインのリフトアップ高さを計測</li>
+          <li>ボトックス：効果範囲と左右差の可視化</li>
         </ul>
       </div>
       <div class="roadmap-phase">
@@ -621,7 +751,7 @@ footer{background:#F0F4F8;border-top:1px solid var(--line);padding:36px 6%;text-
         <p class="phase-timing">2027年</p>
         <ul>
           <li>眼瞼下垂手術の手術計画・成果検証</li>
-          <li>鼻硬化症の施術ビジュアライゼーション</li>
+          <li>鼻整形：施術ビジュアライゼーション</li>
           <li>美容医療全体の「黄金標準」を策定</li>
         </ul>
       </div>
